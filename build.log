@@ -1,0 +1,39 @@
+Started by user s.r.k
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/Build-simple site
+The recommended git tool is: NONE
+using credential github-creds
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/Build-simple site/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/Shiva-ragupathy/Jenkins-SES.git # timeout=10
+Fetching upstream changes from https://github.com/Shiva-ragupathy/Jenkins-SES.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.34.1'
+using GIT_ASKPASS to set credentials github access
+ > git fetch --tags --force --progress -- https://github.com/Shiva-ragupathy/Jenkins-SES.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision 9b68496d14788908eed277abef6e84685c5f31ac (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 9b68496d14788908eed277abef6e84685c5f31ac # timeout=10
+Commit message: "Create script.js"
+ > git rev-list --no-walk 9b68496d14788908eed277abef6e84685c5f31ac # timeout=10
+No emails were triggered.
+[Build-simple site] $ /bin/sh -xe /tmp/jenkins14287136531101122331.sh
++ echo Build started
+Build started
++ echo Listing files:
+Listing files:
++ ls
+index.html
+script.js
++ echo Running script if exists...
+Running script if exists...
++ node -v
+/tmp/jenkins14287136531101122331.sh: 6: node: not found
++ echo Node not installed
+Node not installed
++ echo Build completed
+Build completed
+Email was triggered for: Always
+Sending email for trigger: Always
+Sending email to: ajaiinindia1996@gmail.com
